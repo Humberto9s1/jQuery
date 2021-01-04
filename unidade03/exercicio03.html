@@ -14,7 +14,12 @@
 		<script src="jquery-3.2.1.min.js"></script>
         <script>
 			$( function(e) {
-				
+                $("li[class]").css("background-color","#ff9");
+                $("li.verde").css("color","blue");
+                $("li[class='verde']").css("background-color","#fd9");
+                $("li#texto1").css("color","blue");
+                $("li[id]").css("background-color","#ff5");
+                $("li[id][title]").css("background-color","#ff1");
             });
 		</script>
     </head>
@@ -24,7 +29,7 @@
             <li class="vermelho">Curso HTML5 Essencial</li>
             <li class="verde">Curso CSS3 Essencial</li>
             <li id="texto1">Curso Javascript Essencial</li>
-            <li id="texto2">Curso jQuery Fundamental</li>             
+            <li id="texto2" title="Esse Curso">Curso jQuery Fundamental</li>             
     	</ul>
     </body>
 </html>
