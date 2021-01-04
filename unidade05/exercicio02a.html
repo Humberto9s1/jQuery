@@ -11,7 +11,19 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
+				var positionTop = $('#janela').position().top;
+                var positionLeft = $('#janela').position().left;
+                var positionTopjln = $('#janelinha').position().top;
+                var positionLeftjln = $('#janelinha').position().left;
+                var positionTopof = $('#janelinha').offset().top;
+                var positionLeftof = $('#janelinha').offset().left;
+
+                //pai para avô(main) 
+                console.log("Posição top: "+positionTop+", Posição left: "+positionLeft); 
+                // filho(janelinha) para pai(janela)
+                console.log("Posição top: "+positionTopjln+", Posição left: "+positionLeftjln); 
+                //filho para avô
+                console.log("Posição top: "+positionTopof+", Posição left: "+positionLeftof);
 			});
 		</script>        
     </head>

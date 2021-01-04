@@ -11,7 +11,11 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
+                //atribuindo css ao pai (janelinha para janela), referenciando o pai do objeto
+                $("#janelinha").offsetParent().css("background-color","#ff0");
+                
+                //atribuindo css ao pai (janela para main), referenciando o pai do objeto
+				$("#janela").offsetParent().css("background-color","#bd7");
 			});
 		</script>        
     </head>
