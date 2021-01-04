@@ -6,7 +6,28 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-					
+        
+            // chamar um evento com click direto ou on e o click 
+            $(function() {
+                $('#cursohtml').click(function() {
+                    alert("clicou no botão html"); 
+                });
+
+                function mostrarMensagem() {
+                    alert("passou o mouse por cima do botão css"); 
+                    //ao passar por cima uma vez o off desabilita as proximas vezes
+                    $('#cursocss').off('mouseover', mostrarMensagem);
+                    //$('#cursocss').off(); sem parametro mata todos os eventos
+                }
+                
+                function mostrarMensagem2() {
+                    alert("clicou no botão css"); 
+                }
+                
+                $('#cursocss').on('mouseover', mostrarMensagem);
+                $('#cursocss').on('click', mostrarMensagem2);
+            });
+
 		</script>        
     </head>
 
