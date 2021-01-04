@@ -10,6 +10,20 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
+            function aplicarCor(e) {
+                $cor = e.data.cor;
+                $largura = e.data.largura;
+                
+                $('#janela').css('background-color',$cor);
+                $('#janela').css('width',$largura);
+            }
+
+            $(function() {
+
+                $('#botaoazul').on("click",{cor: 'blue', largura: '250px'}, aplicarCor);
+                $('#botaovermelho').on("click",{cor: 'red', largura: '350px'}, aplicarCor);
+                $('#botaoverde').on("click",{cor: 'green', largura: '450px'}, aplicarCor);
+            });
 
 	 	</script>        
     </head>
