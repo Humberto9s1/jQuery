@@ -4,13 +4,23 @@
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
-			#janela { width:200px; height:200px; background-color:#069; border:5px solid #000 }
+			#janela { width:200px; height:1000px; background-color:#069; border:5px solid #000 }
 		</style>
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			jQuery(document).ready(function() {
-						
+                var altura = $(window).width(); 
+                var largura = $(window).height();
+                var daltura = $(document).width(); 
+                var dlargura = $(document).height();
+
+                //Tamanho da janela é o que se vê (apenas o que vê na janela do browser)
+                console.log("Altura da documento: "+altura+", Largura da janela: ",+largura)
+
+                //Tamanho do documento é todo o conteúdo do documento (até os conteúdos a dar scron da tela)
+                console.log("Altura da documento: "+daltura+", Largura da janela: ",+dlargura)
+                 
 			});
 		</script>        
     </head>
