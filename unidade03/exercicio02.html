@@ -16,8 +16,12 @@
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
         <script>    
-        	$( function() {
-				
+        	$(function() {
+                $("nav a").css("display", "block");
+                $("nav a").css("text-decoration","none");
+                $("nav a:first").css("color","red").css("background-color","yellow");
+                $("nav a:contains('Argentina')").css("color","green")
+                //  :odd para impares e :even para pares 
 			})
         </script>   
                 
